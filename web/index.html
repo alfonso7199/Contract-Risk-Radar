@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contract Risk Radar — see the risk in any contract in seconds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-radar" viewBox="0 0 24 24"><path d="M4 5h13l3 3v11H4V5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 10h8M8 13h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2 20h20L12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 10v4m0 3h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m0 0 4 4m-4-4-4 4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17v3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-clip" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 4.5h6V7H9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+      <symbol id="i-redo" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2 6m2 1v-5h-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-radar"/></svg></span>Contract Risk Radar</a>
+    <span class="topbar-tag">Contract review · OpenAI Agents SDK</span>
+  </header>
+
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">Contract intelligence</p>
+      <h1>See the risk in any contract <em>in seconds</em>.</h1>
+      <p class="lede">Paste a contract and the agents flag one-sided clauses, propose redlines and score the
+        deal risk — every flag pinned to the exact wording, ready for you to accept or push back.</p>
+    </section>
+
+    <section id="setup" class="card setup">
+      <div class="examples"><span class="examples-label">Sample contracts</span><div id="example-chips" class="chips"></div></div>
+      <textarea id="text-input" rows="9" placeholder="Paste a contract here, or pick a sample above..."></textarea>
+      <div class="setup-foot">
+        <div class="drop-inline" id="dropzone" tabindex="0">
+          <svg><use href="#i-upload"/></svg><span>Drop a contract file <small>(.txt · .md)</small></span>
+          <input id="file-input" type="file" multiple hidden accept=".txt,.md,.text" />
+        </div>
+        <button id="run-btn" class="btn-primary" disabled>Review contract <svg><use href="#i-arrow"/></svg></button>
+      </div>
+      <ul id="file-list" class="file-list"></ul>
+      <p id="input-hint" class="hint"></p>
+    </section>
+
+    <section id="review" class="review hidden">
+      <p id="run-status" class="run-status"></p>
+      <div class="review-grid">
+        <div class="doc-pane card">
+          <div class="doc-head"><h3 id="doc-title">Contract</h3><span id="doc-meta" class="doc-meta"></span></div>
+          <pre id="doc-body" class="doc-body"></pre>
+        </div>
+        <div id="findings-pane" class="findings-pane"></div>
+      </div>
+    </section>
+
+    <div id="reset-row" class="reset-row hidden"><button id="reset-btn" class="btn-ghost">Review another contract</button></div>
+  </main>
+
+  <footer class="foot">
+    <span>Contract Risk Radar · HCLTech–OpenAI Agentic AI Hackathon</span>
+    <span>Built with the OpenAI Agents SDK and Codex · not legal advice</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

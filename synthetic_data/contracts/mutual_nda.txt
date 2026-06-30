@@ -1,0 +1,34 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+(Synthetic sample for demonstration — not a real contract)
+
+This Mutual Non-Disclosure Agreement ("Agreement") is made between Harbor Labs LLC and
+Meridian Devices GmbH (each a "Party").
+
+1. PURPOSE. The Parties wish to explore a potential business relationship and may
+disclose confidential information to each other.
+
+2. CONFIDENTIAL INFORMATION. "Confidential Information" means any non-public business
+or technical information disclosed by one Party to the other.
+
+3. OBLIGATIONS.
+3.1 The Receiving Party shall protect Confidential Information using the same degree of
+care it uses for its own confidential information.
+3.2 The confidentiality obligations in this Agreement shall survive indefinitely and
+shall continue in perpetuity after termination.
+
+4. OWNERSHIP OF DEVELOPMENTS. Any inventions, ideas or improvements conceived by either
+Party during the discussions shall become the sole and exclusive property of Harbor
+Labs LLC.
+
+5. NON-SOLICITATION. For a period of three (3) years, neither Party shall solicit or
+hire any employee of the other Party.
+
+6. INDEMNIFICATION. Each Party shall indemnify the other against any and all losses
+arising from any disclosure, without limitation of liability.
+
+7. TERM. This Agreement begins on the Effective Date and continues for five (5) years.
+
+8. RETURN OF MATERIALS. Upon request, the Receiving Party shall return or destroy
+Confidential Information.
+
+9. GOVERNING LAW. This Agreement is governed by the laws of Germany.

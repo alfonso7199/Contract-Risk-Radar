@@ -1,0 +1,50 @@
+MASTER SOFTWARE-AS-A-SERVICE AGREEMENT
+(Synthetic sample for demonstration — not a real contract)
+
+This Master SaaS Agreement ("Agreement") is entered into between Northwind Retail Ltd.
+("Customer") and Vortex Cloud Systems Inc. ("Provider").
+
+1. SERVICES. Provider will make its analytics platform available to Customer on a
+subscription basis during the Term.
+
+2. TERM AND RENEWAL.
+2.1 The initial term is twenty-four (24) months from the Effective Date.
+2.2 This Agreement shall automatically renew for successive twenty-four (24) month
+periods unless Customer provides written notice of non-renewal at least ninety (90)
+days prior to the end of the then-current term.
+2.3 Fees may be increased by Provider at each renewal at Provider's sole discretion.
+
+3. FEES AND PAYMENT.
+3.1 Subscription fees are due annually in advance. Invoices are payable within fifteen
+(15) days of the invoice date.
+3.2 All fees are non-refundable, including where Customer terminates early for any
+reason.
+
+4. INTELLECTUAL PROPERTY.
+4.1 Provider retains all rights in the platform.
+4.2 Customer hereby assigns to Provider all right, title and interest in any feedback,
+suggestions, data, and derived analytics generated through the use of the services.
+
+5. DATA. Provider may use Customer data for any purpose related to improving and
+marketing its services. No specific data protection or security obligations are
+otherwise stated in this Agreement.
+
+6. LIMITATION OF LIABILITY.
+6.1 Provider's aggregate liability under this Agreement is unlimited for all claims.
+6.2 Customer's liability is likewise unlimited and Customer shall indemnify and hold
+Provider harmless from any and all claims arising from Customer's use of the services,
+without cap.
+
+7. TERMINATION.
+7.1 Provider may terminate this Agreement at any time, for convenience, upon ten (10)
+days' notice.
+7.2 Customer may terminate only for Provider's uncured material breach after a sixty
+(60) day cure period.
+
+8. WARRANTIES. The services are provided "as is" with no warranties of any kind.
+
+9. GOVERNING LAW. This Agreement is governed by the laws of the State of Delaware.
+Any dispute shall be resolved exclusively in the courts of Delaware.
+
+10. AMENDMENTS. Provider may modify the terms of this Agreement at any time by posting
+an updated version to its website, effective immediately.
